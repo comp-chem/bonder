@@ -181,12 +181,12 @@ void analysis::anilizePoint(int x, int y, int z, void * other, int Xsize, int Ys
 	for (int i = 0; i < (*spacesUsed).size(); i++)
 	{
 		cube var = (*spacesUsed)[i];
-		if (offsetx < var.maxX && offsetx > var.minX && offsety< var.maxY && offsety > var.minY && offsetz < var.maxZ && offsetz > var.minZ)
+		/*if (offsetx < var.maxX && offsetx > var.minX && offsety< var.maxY && offsety > var.minY && offsetz < var.maxZ && offsetz > var.minZ)
 		{
 			mutexCube.unlock();
 			*sucsess = false;
 			return;
-		}
+		}*/
 	}
 	(*spacesUsed).push_back(cube(minX* res + offsetx, minY* res + offsety, minZ* res + offsetz, maxX* res + offsetx, maxY* res + offsety, maxZ* res + offsetz));
 	mutexCube.unlock();
