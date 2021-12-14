@@ -70,7 +70,7 @@ void analysis::anilizePoint(int x, int y, int z, void * other, int Xsize, int Ys
 {
 	//std::cout << makeCube << std::endl;
 	bool looping = true;
-	center thisPoint(offsetx, offsety, offsetz);
+	/*center thisPoint(offsetx, offsety, offsetz);
 	while (looping)
 	{
 		mutexCube.lock();
@@ -107,7 +107,7 @@ void analysis::anilizePoint(int x, int y, int z, void * other, int Xsize, int Ys
 			boost::this_thread::sleep_for(boost::chrono::seconds(10));
 		}
 		
-	}
+	}*/
 
 	
 	(*batch).cull(offsetx,offsety,offsetz);	
