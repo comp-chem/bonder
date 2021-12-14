@@ -69,7 +69,7 @@ void analysis::anilizePoint(int x, int y, int z, void * other, int Xsize, int Ys
 
 	//std::cout << makeCube << std::endl;
 	bool looping = true;
-	center thisPoint(offsetx, offsety, offsetz);
+	/*center thisPoint(offsetx, offsety, offsetz);
 	for (unsigned int i = 0; i < (*spacesUsed).size(); i++)
 	{
 		cube var = (*spacesUsed)[i];
@@ -78,7 +78,7 @@ void analysis::anilizePoint(int x, int y, int z, void * other, int Xsize, int Ys
 			*sucsess = false;
 			return;
 		}
-	}
+	}*/
 
 
 
