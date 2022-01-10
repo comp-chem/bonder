@@ -30,7 +30,7 @@ std::vector<std::string> split(const std::string &s, char delim) {
 //decode fortran doubles
 double DFD(string input)
 {
-	std::vector<std::string> seglist = split(input,'D');
+	std::vector<std::string> seglist = split(input,'e');
 	double mines = stod(seglist[0]);
 	double power = stoi(seglist[1]);
 	return mines * pow(10, power);
